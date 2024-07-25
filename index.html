@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Desafio 2 - DNC Weather</title>
+</head>
+
+<body>
+    <!--MENU SUPERIOR-->
+    <div id="MenuSuperior">
+        <h1 id="DNCW">DncWeather</h1>
+        <div id="infos">
+            <p id="info_end">Endereços</p>
+            <p id="info_prev">Previsão do tempo</p>
+        </div>
+    </div>
+
+    <div id="body">
+        
+        <!--TEXTO INICIAL-->
+        <div id='texto_inicial'>
+            <h1 id="titulo">
+                Descubra Mais com Precisão: <br />
+                Previsões do Tempo e endereços  <br />
+                em tempo real. <br />
+            </h1>
+            <img src="Imagens/Img1.svg" alt="Imagem 1" />
+        </div>
+        
+        <!--FORMULÁRIO-->
+        <div id="Form">
+            <div id="form">
+                <form> 
+                    <h1>Primeiro Nome:</h1>
+                    <input type="text" id="nome" placeholder="Insira seu primeiro nome:" />
+
+                    <h2>E-mail:</h2>
+                    <input type="text" id="email" placeholder="Insira seu e-mail:"/>
+
+                    <h2>Digite o CEP:</h2>
+                    <input type="text" id="valor_cep" placeholder="Insira o CEP"/>
+
+                    <h2>Digite a latitude e longitude para saber a previsão:</h2>
+
+                    <div id="lat">
+                        <input type="text"  id="latitude" placeholder="Latitude"/>
+
+                        <input type="text" id="longitude" placeholder="Longitude"/>
+                    </div>
+
+                    <button type="button" onClick="handleClick()">Acessar</button>
+                </form>
+            </div>
+        </div>
+
+        <!--CEP-->
+        <div id="CEP">
+            <div id="cep">
+                <h1>Resultado da busca por CEP:</h1>
+                <img src="Imagens/img2.svg" alt="Imagem 2" />
+            </div>
+            <div id="cep2">
+                <p>Logradouro/nome</p>
+                <p>Bairro/distrito</p>
+                <p>Localidade/UF</p>
+                <p></p>
+            </div>
+            <div id="cep3">
+                <p id="rua">Justino Cobra</p>
+                <p id="bairro">Vila Ema</p>
+                <p id="uf">SP</p>
+                <p></p>
+            </div>
+        </div>
+
+        <!--PREVISÃO DO TEMPO-->
+        <div id="Tempo">
+            <div id="tempo_01">
+                <h1>Previsão do tempo na região: </h1>
+                <img src="Imagens/img3.svg" alt="Imagem 3" />
+            </div>
+            <div id="tempo_02">
+                <p id="clima">Previsão de tempo de acordo com a região: </p>
+            </div>
+        </div>
+    </div>
+    
+    <!--RODAPÉ-->
+    <div id="footer">
+        <p>Termos de Uso | Política de Privacidade</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
