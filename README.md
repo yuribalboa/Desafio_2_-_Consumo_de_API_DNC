@@ -44,6 +44,7 @@ O projeto possui um design simples e funcional, garantindo uma experiência flui
 ---
 
 🌟 Prévia
+
 <img width="296" alt="image" src="https://github.com/user-attachments/assets/e88386dd-95c0-4708-bb77-7960520c8ac8">
 
 
